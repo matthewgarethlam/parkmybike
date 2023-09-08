@@ -33,8 +33,8 @@ library(leafem)
 
 ##Specify Postcodes
 ```{r}
-origin_postcode <- "NW1 8PT"
-dest_postcode <- "W9 3PE"
+origin_postcode <- "NW1 2NR"
+dest_postcode <- "NW3 4SW"
 ```
 
 
@@ -208,7 +208,7 @@ library(RColorBrewer)
 library(scales)
 library(lattice)
 library(dplyr)
-
+library(shiny)
 
 
 ui <- fluidPage(
