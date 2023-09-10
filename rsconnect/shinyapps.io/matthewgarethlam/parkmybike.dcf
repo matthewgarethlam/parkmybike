@@ -5,9 +5,10 @@ account: matthewgarethlam
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9811795
-bundleId: 7662886
+bundleId: 7662925
 url: https://matthewgarethlam.shinyapps.io/parkmybike/
-when: 1694212914.51401
-lastSyncTime: 1694212914.51403
+when: 1694214370.51218
+lastSyncTime: 1694214370.5122
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: cycle_rack_mapper.Rmd

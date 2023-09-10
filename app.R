@@ -3,7 +3,6 @@ library(leaflet)
 library(CycleInfraLnd)
 library(dplyr)
 library(spData)
-library(tmap)
 library(PostcodesioR)
 library(osmdata)
 library(r5r)
@@ -15,7 +14,7 @@ library(mapsf)
 library(sf)
 library(leafem)
 library(waiter)
-
+options(java.parameters = "-Xmx2G")
 ui <- fluidPage(
   useWaiter(),
   titlePanel("ParkMyBike London"),
