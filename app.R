@@ -79,17 +79,17 @@ server <- function(input, output){
     #### Definitions ####
     
     
-    #get definitions: origin and destination postcodeS
+    #extract from user input
     origin_postcode <- input$origin_postcode
     dest_postcode <- input$destination_postcode
     
-    #geocoding of origin and dest 
+    #turn into dataframe
     origin_address <- tibble(address = origin_postcode)
     dest_address <- tibble(address = dest_postcode)
     
+    #produce coordinates
     origin_coords <- origin_address %>% geocode(address=address, method="osm") %>% select(long, lat) %>% 
       rename(longitude=long, latitude=lat)
-    
     dest_coords <- dest_address %>% geocode(address=address, method="osm") %>% select(long, lat) %>% rename(longitude=long, latitude=lat)
     
     #turn coords into spatial points
